@@ -17,6 +17,5 @@ public class HomePage {
 
   private void clickLink(String linkText) {
     webDriver.findElement(By.cssSelector("a[href=\"/" + linkText + "\"] > div")).click();
-    System.out.println("linkText = " + linkText);
   }
 }
