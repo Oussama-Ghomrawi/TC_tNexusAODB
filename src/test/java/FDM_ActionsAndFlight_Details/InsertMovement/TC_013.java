@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TC_013 extends Setup {
+public class TC_013 extends Setup{
   @Test
   public void TC_013() {
     FDMPage fdmPage = homePage.clickFDMLink();
-    fdmPage.clickADEPTab();
+    fdmPage.clickFDMTabs();
+    fdmPage.clickFDM_Arr_Tab();
     fdmPage.clickMovementIcon();
     fdmPage.clickInsert();
     assertEquals(fdmPage.getHeader(), "INSERT MOVEMENT");

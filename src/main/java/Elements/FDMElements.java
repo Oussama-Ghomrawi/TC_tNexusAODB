@@ -4,10 +4,9 @@ import org.openqa.selenium.By;
 
 public class FDMElements {
   protected final By fdmTabs =
-      By.xpath("//*[@id=\"root\"]/div/div[1]/div[5]/div/section/div/div[2]/div/div/div/div[2]");
+      By.xpath("//*[@id=\"root\"]/div/div[1]/div[5]/div/section/div/div[2]");
   protected final By fdm_arr_Tab =
-      By.xpath(
-          "//*[@id=\"root\"]/div/div[1]/div[5]/div/section/div/div[2]/div/div/div/div[4]/div/ul/li[1]");
+      By.cssSelector("ul .p-dropdown-item.p-highlight[aria-label=\"Arrival \"]");
   protected final By fdm_dep_Tab =
       By.xpath(
           "//*[@id=\"root\"]/div/div[1]/div[5]/div/section/div/div[2]/div/div/div/div[4]/div/ul/li[2]");
@@ -54,12 +53,18 @@ public class FDMElements {
   protected final By arr_ADEP =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[1]/div[2]/div/div/div[1]/div[2]/input");
+  protected final By first_arr_ADEP =
+      By.xpath(
+          "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div/div[1]");
   protected final By dep_ADEP =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[2]/div/div/div[1]/div[2]/input");
   protected final By arr_Category =
-      By.xpath(
-          "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[1]/div[2]/div/div/div[5]/div[2]/input");
+      By.cssSelector(
+          "body > div.MuiDialog-root.small_window.flight_details.fdm-component.dynamic_rowHeight > div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div > form > div.sc-gITdmR.gUayCS > div > div:nth-child(1) > div.MuiGrid-root.moment_arrival.fdm_tbx-formBody.MuiGrid-container.MuiGrid-spacing-xs-2 > div > div > div:nth-child(5) > div.sc-hHLeRK.gjGSvJ.DropDownWrapper > input");
+  protected final By first_arr_Category =
+      By.cssSelector(
+          "body > div.MuiDialog-root.small_window.flight_details.fdm-component.dynamic_rowHeight > div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div > form > div.sc-gITdmR.gUayCS > div > div:nth-child(1) > div.MuiGrid-root.moment_arrival.fdm_tbx-formBody.MuiGrid-container.MuiGrid-spacing-xs-2 > div > div > div:nth-child(5) > div.sc-hHLeRK.fUkWob.DropDownWrapper > div > div.sc-llJcti.jXqlUh.dropdown_tBody > div > div > div:nth-child(1)");
   protected final By dep_Category =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[2]/div/div/div[6]/div[2]/input");
@@ -71,7 +76,10 @@ public class FDMElements {
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[2]/div/div/div[4]/div[2]/input");
   protected final By ac_type =
       By.xpath(
-          "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[1]/div[1]/div/div/div/div[2]/input");
+          "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[1]/div[1]/div/div/div/div[2]");
+  protected final By first_ac_type =
+      By.xpath(
+          "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[1]/div[1]/div/div/div/div[2]/div/div[2]/div/div/div[1]");
   protected final By arr_CallSign =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[1]/div[1]/div[1]/div/div/div[3]/div/div/input");
@@ -81,4 +89,6 @@ public class FDMElements {
   protected final By registration =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[1]/div[1]/div[2]/div/div/div/div[2]/input");
+  protected final By yesBtn = By.xpath("/html/body/div[14]/div[3]/div/div[2]/button[2]");
+  protected final By errorMsg = By.cssSelector(".sc-fbPSWO.fRAQgw");
 }
