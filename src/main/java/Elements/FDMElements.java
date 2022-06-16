@@ -63,4 +63,8 @@ public class FDMElements {
   protected final By dep_CallSign =
       By.xpath(
           "/html/body/div[9]/div[3]/div/div/div/form/div[2]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/input");
+
+  protected final By FDMMenu = By.className("si-group-2");
+
+
 }

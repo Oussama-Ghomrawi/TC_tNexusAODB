@@ -45,4 +45,8 @@ public class FDMPage extends FDMElements {
   public boolean checkLogo() {
     return webDriver.findElement(dep_logo).isDisplayed();
   }
+
+  public void clickFDMMenu(){
+    webDriver.findElement(FDMMenu).click();
+  }
 }
